@@ -35,7 +35,7 @@ fun NavGraph(navController: NavHostController, onBottomBarVisibilityChanged: (Bo
         ) {
             onBottomBarVisibilityChanged(false)
             val id= it.arguments?.getInt("id")
-            DetailScreen(id = id?:0)
+            DetailScreen(navController,id = id?:0,)
         }
     }
 }
